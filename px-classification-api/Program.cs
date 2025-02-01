@@ -24,7 +24,8 @@ app.MapPost("/upload", async (HttpContext context) =>
             new ClassificationResponseDto { Classification = "RoofingTileReplacement", RiskLevel = "High" },
             new ClassificationResponseDto { Classification = "WaterLeakDetection", RiskLevel = "Low" },
             new ClassificationResponseDto { Classification = "BasementWaterproofing", RiskLevel = "Low" },
-            new ClassificationResponseDto { Classification = "FireDamagedWallRepair", RiskLevel = "High" }
+            new ClassificationResponseDto { Classification = "FireDamagedWallRepair", RiskLevel = "High" },
+            new ClassificationResponseDto { Classification = "BrokenFloorTileRepair", RiskLevel = "High" }
         };
 
     var response = classifications[random.Next(classifications.Length)];
